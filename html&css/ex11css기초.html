@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /* 전체선택자  = 모든 태그들에게 적용하겠다. */
+     *{
+        color:blue;
+     }
+     /* 태그선택자(태그명) = 특정 태그들에게 적용하겠다 */
+     p{
+        color:red;
+     }
+     /* 클래스선택자(.) = 특정 클래스들에게 적용하겠다 
+        1. 중복이 가능하다.
+     */
+     .p-txt{
+        color:green;
+     }
+     /* 아이디선택자(#) = 특정 아이디들에게 적용하겠다
+        1. 중복이 불가능하다(한 페이지에 같은 id값이 존재할 수 없다.)
+     */
+     #span-txt{
+        color:yellow;
+     }
+
+     /* 선택자의 우선순위
+        전체 선택자(*=0점) 태그선택자(태그명=1점) 클래스선택자(.클래스명=10점) 아이디선택자(#아이디=100점)
+     
+     */
+    </style>
+</head>
+<body>
+    <p>p태그 스타일을 변경해주세요~</p>
+    <p class="p-txt">p태그 스타일을 변경해주세요~</p>
+    <span id="span-txt">span태그 스타일을 변경해주세요~</span>
+    <span class="p-txt">span태그 스타일을 변경해주세요~</span>
+</body>
+</html>
