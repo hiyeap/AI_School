@@ -9,6 +9,14 @@
     font-size : 24px;
 }
 
+body{
+    background-color: #b8d8ff;
+}
+
+.container{
+    background-color:white;
+}
+
 ol, ul {
     list-style: none;
 }
