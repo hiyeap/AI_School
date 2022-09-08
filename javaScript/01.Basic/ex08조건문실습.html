@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // 1. Python, 크롤링, web 세 과목의 점수를 입력받아줌
         //  => 입력창을 통한 입력문
         let python = parseInt(prompt("Python점수를 입력해주세용"))
         let crawling = parseInt(prompt("Crawling점수를 입력해주세요"))
-        let web = parseInt(prompt( "Web점수를 입력하세요"))
+        let web = parseInt(prompt("Web점수를 입력하세요"))
 
 
         // 2. 1에서 입력받은 점수들로 총점, 평균, 등급을 구해줌
@@ -20,29 +22,30 @@
         //  2-2) 등급은 평균 점수를 기준으로 부여한다.
         // 90점 이상 A / 80점 이상 B / 70 C / 60 D
         //  그 외에는 F로 설정해준다
-        let sum = python+crawling+web
-        let avg = parseInt(sum/3)
+        let sum = python + crawling + web
+        let avg = parseInt(sum / 3)
         let grade = ""
-        if(avg>=90){
-            grade="A"
-        }else if(avg>=80){
-            grade="B"
-        }else if(avg>=70){
-            grade="C"
-        }else if(avg>=60){
-            grade="D"
-        }else{
-            grade="F"
+        if (avg >= 90) {
+            grade = "A"
+        } else if (avg >= 80) {
+            grade = "B"
+        } else if (avg >= 70) {
+            grade = "C"
+        } else if (avg >= 60) {
+            grade = "D"
+        } else {
+            grade = "F"
         }
 
 
         // 3.결과 값 출력
         // (당신의 평균은 XX점이고, 당신의 등급은 x등급입니다.)
-        console.log("당신의 평균은 "+String(avg)+"점이고, 당신의 등급은 "+grade+"입니다.")
+        console.log("당신의 평균은 " + String(avg) + "점이고, 당신의 등급은 " + grade + "입니다.")
 
 
 
 
     </script>
 </body>
+
 </html>
