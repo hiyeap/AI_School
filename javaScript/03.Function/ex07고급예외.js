@@ -1,3 +1,6 @@
+// throw 키워드 : 강제 예외 발생
+// Error 객체 : 자세한 예외 출력
+
 try {
     let array = new Array(2000);
 } catch(e) {                // 예외(Exception) 객체
